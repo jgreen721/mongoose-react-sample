@@ -1,0 +1,113 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  max-width: 85rem;
+  margin: 0 auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  /* position:relative; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blur {
+  filter: blur(3px);
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.main-section {
+  flex-grow: 1;
+  display: flex;
+}
+
+.small-column {
+  flex: 1;
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+.add-todo-toggle-div {
+  align-items: flex-end;
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem;
+}
+
+.large-column {
+  flex: 2;
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.addtodo-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.hide-addtodo {
+  transform: scale(0);
+}
+.addtodo-overlay {
+  background: black;
+  position: absolute;
+  inset: 0;
+  opacity: 85%;
+}
+
+.addtodo-form {
+  background: white;
+  padding: 0.5rem;
+  position: relative;
+  z-index: 5;
+}
+
+.form-row {
+  display: flex;
+  margin: 1rem 0;
+  gap: 0.25rem;
+}
+
+.number-input {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.form-control {
+  padding: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+}
+
+/* Todos */
+
+.todo-item {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  gap: 1.5rem;
+}
