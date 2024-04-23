@@ -9,7 +9,7 @@ const Todos = () => {
     const [todos,setTodos] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:4455/todos')
+        fetch('https://mongotodosapp.azurewebsites.net/todos')
         .then(res=>res.json())
         .then(res=>{
           console.log("Res",res);
